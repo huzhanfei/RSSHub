@@ -12,7 +12,7 @@ pageClass: routes
 
 ### App Store/Mac App Store
 
-见 [#app-store-mac-app-store](/en/program-update.html#app-store-mac-app-store)
+See [#app-store-mac-app-store](/en/program-update.html#app-store-mac-app-store)
 
 ## AutoTrader
 
@@ -51,17 +51,23 @@ Official Website: [https://www.ssm.gov.mo/apps1/PreventWuhanInfection/en.aspx](h
 
 <RouteEn author="Gnnng" example="/coronavirus/sg-moh" path="/coronavirus/sg-moh"/>
 
+### Yahoo Japan COVID19 news collection
+
+Official Website: <https://news.yahoo.co.jp/pages/article/20200207>
+
+<RouteEn author="sgqy" example="/coronavirus/yahoo-japan" path="/coronavirus/yahoo-japan/:tdfk?" :paramsDesc="['Romaji of Todofuken. Can be got from URLs on area detail page. Example: kyoto']"/>
+
 ## Darwin Awards
 
-### Articles
+### Award Winners
 
-<Route author="zoenglinghou" example="/darwinawards/all" path="/darwinawards/all" />
+<RouteEn author="zoenglinghou nciztzk" example="/darwinawards" path="/darwinawards" />
 
 ## dcinside
 
 ### board
 
-<Route author="zfanta" example="/dcinside/board/programming" path="/dcinside/board/:id" :paramsDesc="['board id']" />
+<RouteEn author="zfanta" example="/dcinside/board/programming" path="/dcinside/board/:id" :paramsDesc="['board id']" />
 
 ## DHL
 
@@ -87,6 +93,12 @@ Official Website: [https://www.ssm.gov.mo/apps1/PreventWuhanInfection/en.aspx](h
 
 <RouteEn author="luyuhuang" example="/emi-nitta/news" path="/emi-nitta/news"/>
 
+## Fisher Spb
+
+### News
+
+<RouteEn author="denis-ya" example="/fisher-spb/news" path="/fisher-spb/news" />
+
 ## HackerOne
 
 ### HackerOne Hacker Activity
@@ -104,7 +116,7 @@ Official Website: [https://www.ssm.gov.mo/apps1/PreventWuhanInfection/en.aspx](h
 
 ### Track & Trace Service
 
-<RouteEn author="tuzi3040" example="/japanpost/EJ123456789JP/en" path="/japanpost/:reqCode/:locale?" :paramsDesc="['Package Number', 'Language, default to japanese `ja`']" radar="1" rssbud="1">
+<RouteEn author="tuzi3040" example="/japanpost/track/EJ123456789JP/en" path="/japanpost/track/:reqCode/:locale?" :paramsDesc="['Package Number', 'Language, default to japanese `ja`']" radar="1" rssbud="1">
 
 | Japanese | English |
 | -------- | ------- |
@@ -124,11 +136,23 @@ Official Website: [https://www.ssm.gov.mo/apps1/PreventWuhanInfection/en.aspx](h
 
 </RouteEn>
 
+## Lever
+
+### Recruitment
+
+<RouteEn author="tsarlewey" example="/lever/lever" path="/lever/:domain" :paramsDesc="['Company with Lever Board']"/>
+
 ## MITRE
 
 ### All Publications
 
-<Route author="sbilly" example="/mitre/publications" path="/mitre/publications" />
+<RouteEn author="sbilly" example="/mitre/publications" path="/mitre/publications" />
+
+## Mozilla
+
+### Firefox Monitor
+
+<RouteEn author="TonyRL" example="/firefox/breaches" path="/firefox/breaches"/>
 
 ## Nobel Prize
 
@@ -160,7 +184,7 @@ Official Website: [https://www.ssm.gov.mo/apps1/PreventWuhanInfection/en.aspx](h
 
 ### Today Popular
 
-<RouteEn author="miaoyafeng" example="/producthunt/today" path="/producthunt/today">
+<RouteEn author="miaoyafeng Fatpandac" example="/producthunt/today" path="/producthunt/today">
 </RouteEn>
 
 ## Remote.work
@@ -191,7 +215,19 @@ Refer to [the list of supported currencies](https://transferwise.com/tools/excha
 
 </RouteEn>
 
-## TSSstatus（iOS downgrade channel）
+## Trending Search Keyword Aggregator
+
+### Aggregated Keyword Tracker
+
+Track entries containing specific keywords on major social media platforms.
+
+Current listings: *Weibo Search*、*Toutiao Search*、*Zhihu Search*、*Zhihu Videos*、*Zhihu Topics*。
+
+Data Source: [trending-in-one](https://github.com/huqi-pr/trending-in-one)
+
+<RouteEn author="Jkker" example="/trending/taiwan/3" path="/trending/:keywords/:numberOfDays?" radar="1" :paramsDesc="['List of keywords separated by commas', 'Number of previous days (defaults to 3)']"/>
+
+## TSSstatus (iOS downgrade channel)
 
 ### Status
 
@@ -220,3 +256,14 @@ Type
 | all | rec       |
 
 </RouteEn>
+
+## 裏垢女子まとめ
+
+### Homepage
+
+<RouteEn author="SettingDust Halcao" example="/uraaka-joshi" path="/uraaka-joshi" radar="1" rssbud="1" puppeteer="1"/>
+
+### User
+
+<RouteEn author="SettingDust Halcao" example="/uraaka-joshi/_rrwq" path="/uraaka-joshi/:id" :paramsDesc="['User ID']" radar="1" rssbud="1" puppeteer="1"/>
+
